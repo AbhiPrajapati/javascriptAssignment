@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>MM/DD/YYYY</h1>
+    <h1 id="mdy"></h1>
+    <h1>DD/MM/YYYY</h1>
+    <h1 id="dmy"></h1>
+    <h1>YYYY/MM/DD</h1>
+    <h1 id="ymd"></h1>
+    <script>
+        var todaydate = new Date();
+        var day = todaydate.getDate();
+
+        var month = todaydate.getMonth()+1; 
+        var year = todaydate.getFullYear();
+        if(day<10) 
+        {
+            day='0'+day;
+        } 
+        
+        if(month<10) 
+        {
+            month='0'+month;
+        } 
+        todaydate = month+'/'+day+'/'+year;
+        document.getElementById('mdy').innerHTML= todaydate;
+        todaydate = day+'/'+month+'/'+year;
+        document.getElementById('dmy').innerHTML= todaydate;
+        todaydate = year+'/'+month+'/'+day;
+        document.getElementById('ymd').innerHTML= todaydate;
+    </script>
+</body>
+</html>

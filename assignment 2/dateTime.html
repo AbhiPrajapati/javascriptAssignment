@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+       var date = new Date();
+       var day = date.getDay();
+       var todayday = new Array(7);
+       todayday[1] = "Sunday";
+       todayday[2] = "Monday";
+       todayday[3] = "Tuesday";
+       todayday[4] = "Wednesday";
+       todayday[5] = "Thursday";
+       todayday[6] = "Friday";
+       todayday[7] = "Saturday";
+       var today = todayday[date.getDay()]
+       var hour = date.getHours();
+       var min = date.getMinutes();
+       var sec = date.getSeconds();
+       document.writeln("Sample Output:Today is:"+today+".");
+       document.write("Current time is:"+hour+":"+min+":"+sec+".");
+   </script>
+</body>
+</html>
