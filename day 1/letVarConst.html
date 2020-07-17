@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var global = "Something";
+        // This var keyword is used to declare a variable globally
+        let name = "rahul";
+        // let is used to declare a variable It is less powerfull in terms of access It does not have effect on variable outside the scope.
+        //eg..
+        {
+            let boy ="abhi";
+            console.log(boy);
+            //here the value of boy is abhi
+        }
+
+        let boy = "abhishek";
+        console.log(boy);
+        //here the value is abhishek and it does not have any changes dur to predeclaration of boy as "abhi"
+        const one = 1;
+        console.log(one);
+        //const is used to declare a variable which is not going to be changed even on if we declare it afterward
+
+
+    </script>
+</body>
+</html>
