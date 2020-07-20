@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ArrowFunction</title>
+</head>
+<body>
+  <script type="text/javascript">
+  	// function ask(question,yes,no)
+  	// {
+  	// 	if(confirm(question)) yes()
+  	// 	else no();	
+  	// }
+  	// ask(
+  	// 	"Do you agree?",
+  	// 	function(){alert("you Agreed.");},
+  	// 	function(){alert("you cancled the execution.");}
+  	// 	)
+    
+    const ask = (question,yes,no) =>{
+    	if(confirm(question)) yes()
+  	 	else no();
+    }
+
+    ask(
+  	 	"Do you agree?",
+  	 	function(){alert("you Agreed.");},
+  	 	function(){alert("you cancled the execution.");}
+  	 	);
+  </script>
+</body>
+</html>

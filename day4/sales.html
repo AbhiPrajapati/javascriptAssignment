@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sales</title>
+	<meta charset="utf-8">
+</head>
+<body>
+   <script type="text/javascript">
+   	let salesMadeByEmployee = prompt("Enter the sales you have done");
+   	if(salesMadeByEmployee >= 20000)
+   	{
+   		let reward = (10*salesMadeByEmployee)/100;
+   		console.log(`The reward for this employee is ${reward} Rs`);
+   	}else if(salesMadeByEmployee >= 10001)
+   	{
+   		let reward = (7*salesMadeByEmployee)/100;
+   		console.log(`The reward for this employee is ${reward} Rs`);
+   	}else if(salesMadeByEmployee >= 5001)
+   	{
+   		let reward = (5*salesMadeByEmployee)/100;
+   		console.log(`The reward for this employee is ${reward} Rs`);
+   	}else if(salesMadeByEmployee >= 0)
+   	{
+   		let reward = (2*salesMadeByEmployee)/100;
+   		console.log(`The reward for this employee is ${reward} Rs`);
+   	}else{
+   		console.log("Please Enter the Amount in Rupee");
+   	}
+   </script>
+</body>
+</html>
