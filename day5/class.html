@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+  	class user
+  	{
+  	   constructor(name,age,email){
+  	   	this.name = name;
+        this.age = age;
+        this.email = email;
+        this.courses = [];
+    }
+       
+
+      login()
+       {
+       	console.log(`This ${this.name} has logged in.`);
+       	return this;
+       }
+       logout()
+       {
+       	console.log(`This ${this.name} has logged out.`);
+       	return this;
+       }
+  	}
+
+
+  	class moderator extends user{
+  		constructor(name,age,email,lucoin)
+  		{
+  			super(name,age,email);
+  			this.lucoin = 0
+  		}
+  		addcoin()
+  		{ 
+  			this.lucoin ++;
+  			console.log(`${this.name } has ${this.lucoin} coins`);
+  			return this;
+              
+  		}
+  		removecoin()
+  		{ 
+  			this.lucoin --;
+  			console.log(`${this.name } has ${this.lucoin} coins`);
+  			return this;
+              
+  		}
+  		getDetails(){
+  			console.log(`user name is ${this.name} and the email address is ${this.email} and his/her age is ${this.age}`);
+  			return this;
+  		}
+  	}
+
+  	class Admin extends moderator{
+  		
+  		addCourses(user,course)
+  		{
+            user.courses.push(course);
+            console.log('Course added');
+  		}
+  		removeCourses()
+  		{
+            courses.pop();
+            console.log('course eleminated');
+  		}
+
+
+  	}
+  	let user1 = new user('abhishek',19,'prajapatiabhishek1111@gmail.com');
+    user1.login().logout();
+    let moderate = new moderator('abhishek',19,'prajapatiabhishek1111@gmail.com');
+    moderate.addcoin().addcoin().getDetails();
+    let admin = new Admin('abhishek',19,'prajapatiabhishek1111@gmail.com');
+    admin.addCourses(user1,'book');
+
+  </script>
+</body>
+</html>

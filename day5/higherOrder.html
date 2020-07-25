@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Document</title>
+</head>
+<body>
+<script type="text/javascript">
+	let value = prompt("Enter a no:");
+	let array = [];
+	for (let i=0 ; i<value ; i++)
+	{
+       let main_value = prompt("Enter a positive no");
+       array.push(main_value);
+	}
+	console.log(array);
+	// filter
+	let new_array =array.filter((el)=>el%2==0);
+	let cube = new_array.map((el)=>el**3);
+	console.log(cube);
+</script>
+</body>
+</html>
