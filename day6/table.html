@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   <input id="no" type="number" placeholder = "Enter a no to get the table">
+   <button onClick="table()">Click me</button>
+    <script>
+        function table(){
+        let no = document.getElementById('no').value;
+       for(let i = 1; i < 11 ; i++)
+           {
+               let para = document.createElement('P');
+               para.innerHTML = `${no} * ${i} = ${no*i}`;
+               document.body.appendChild(para);
+           }
+        }
+    </script>
+</body>
+   
+</html>

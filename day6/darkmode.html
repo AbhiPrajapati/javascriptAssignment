@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body  id="body">
+  <h3 id="welcomeName">Welcome</h3>
+   <input placeholder="Enter your name " id="name" type="text">
+   <button id="wel" onclick="welcome()" >Welcome</button>
+    <button id="mode" onclick="mode()" >Darkmode</button>
+    <h3 id="time">time</h3>
+    <script>
+        
+        function welcome()
+        {
+            let name = document.getElementById('name').value;
+            document.getElementById('welcomeName').innerHTML = `<h1> Welcome ${name}</h1>`;
+        }
+        
+        
+	function mode()
+        
+        {
+            document.body.style.backgroundColor = "black";
+            document.body.style.color = "white";
+        }
+        currentTime =  document.getElementById('time');
+        function clock()
+        {
+            let date = new Date();
+            let time = date.toLocaleTimeString();
+            currentTime.innerText = time;
+        }
+        clock()
+        setInterval(clock,1000);
+    </script>
+</body>
+
+</html>

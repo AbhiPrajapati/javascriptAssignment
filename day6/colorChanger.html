@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body onload="colorChanger();">
+    <script type="text/javascript">
+        let i = 0;
+        arrayColor = ["red", "green", "yellow", "blue"];
+
+        function colorChanger() {
+            document.body.style.backgroundColor = arrayColor[i];
+            i++;
+            if (i == arrayColor.length) {
+                i = 0;
+            }
+        }
+
+        setInterval(colorChanger, 5000);
+    </script>
+</body>
+
+</html>
