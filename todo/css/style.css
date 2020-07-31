@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#title {
+    display: inline-block;
+    color: rgb(25, 183, 231);
+    font-size: 40px;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+.addBtn {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    margin-left: 50px;
+    margin-top: 50px;
+    border: transparent;
+    outline-color: transparent;
+    color: white;
+    background-color: rgb(10, 228, 10);
+    font-style: bold;
+}
+
+.remBtn {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    margin-left: 50px;
+    margin-top: 50px;
+    border: transparent;
+    outline-color: transparent;
+    color: white;
+    background-color: crimson;
+    font-style: bold;
+}
+
+.detail {
+    padding: 20px;
+    margin-left: 10vw;
+    font-size: medium;
+    color: dimgrey;
+    border-radius: 10px;
+    outline-color: transparent;
+    border: transparent;
+    box-shadow: 5px 0 10px 5px rgba(161, 189, 243, 0.664);
+    ;
+    width: 70%;
+    border-color: white;
+}
+
+.saveBtn {
+    padding: 20px 40px;
+    color: white;
+    background-image: linear-gradient(to left, rgba(16, 43, 194, 0.664), rgb(0, 132, 255));
+    float: right;
+    border: transparent;
+    margin-right: 15vw;
+    outline-color: transparent;
+    border-radius: 5px;
+}
